@@ -1,0 +1,6 @@
+joblib==1.0.1
+numpy==1.20.3
+pandas==1.2.5
+Pillow==9.0.0
+requests==2.25.1
+streamlit==1.7.0
