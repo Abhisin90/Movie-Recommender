@@ -21,7 +21,7 @@ def fetch_poster(movie_id):
         full_path = "https://image.tmdb.org/t/p/w500/" + poster_path
         return full_path
     except:
-        img = Image.open("What2watch.png")
+        img = Image.open("./assets/images/What2watch.png")
         img = img.resize((500, 750))
         return img
 
@@ -308,9 +308,9 @@ def main():
 
     st.sidebar.title("Developer's Contact")
     st.sidebar.markdown('[![Harsh-Dhamecha]'
-                        '(https://img.shields.io/badge/Author-Sourav%20Dey-brightgreen)]'
-                        '(https://github.com/souvenger)')
-    img = Image.open("What2watch.png")
+                        '(https://img.shields.io/badge/Author-Abhinav%20Singh-brightgreen)]'
+                        '(https://github.com/Abhisin90)')
+    img = Image.open("./assets/images/What2watch.png")
     st.sidebar.image(
         img, use_column_width=True)
 
@@ -338,11 +338,11 @@ def main():
         st.markdown(
             "Rankings Based On Popularity is One Of The Easiest Task To Do. [**Jurassic World**](https://en.wikipedia.org/wiki/Jurassic_World) is The most Popular Movie according to IMDB which is the most Popular movie Information site.")
 
-        img = Image.open('jurasic.jpg')
+        img = Image.open('./assets/images/jurasic.jpg')
         st.image(img)
         st.markdown(
             "Basically Popularity Of a movie is given by the number of page views of all the pages related to that movie")
-        img2 = Image.open('top_15_popularity.png')
+        img2 = Image.open('./assets/images/top_15_popularity.png')
         st.image(img2)
         show(popularity_id_list, popularity_list)
     elif(select == 'Highest Grossers'):
@@ -350,11 +350,11 @@ def main():
         st.markdown(
             "Films generate income from several revenue streams, including theatrical exhibition, home video, television broadcast rights, and merchandising. However, theatrical box office earnings are the primary metric for trade publications in assessing the success of a film, mostly because of the availability of the data compared to sales figures for home video and broadcast rights, but also because of historical practice.")
 
-        img = Image.open('avatar.jpg')
+        img = Image.open('./assets/images/avatar.jpg')
         st.image(img)
         st.markdown(
             "James Cameron's [Avatar](https://en.wikipedia.org/wiki/Avatar_(2009_film)) reclaimed the highest grossing movie of all time with 2.8 Billon dolars.  ")
-        img2 = Image.open('top_15_profit.png')
+        img2 = Image.open('./assets/images/top_15_profit.png')
 
         st.image(img2)
         show(profit_id_list, profit_list)
@@ -362,19 +362,19 @@ def main():
         st.header("15 Movies ranked by IMDB Rating")
         st.markdown(
             "IMDB uses the weighted rating formula to construct the Top movie chart by Rating. Audience rating is the closest thing to a definitive ranking.")
-        img = Image.open('shawshank.jpg')
+        img = Image.open('./assets/images/shawshank.jpg')
         st.image(img)
         st.markdown("[The Shawshank Redemption](https://en.wikipedia.org/wiki/The_Shawshank_Redemption) holds the Number 1 spot in the Top-250 English Movies listed by IMBd. It is one among the best movies ever made in World Cinema and applauded by many film critics.")
-        img2 = Image.open('top_15_wr.png')
+        img2 = Image.open('./assets/images/top_15_wr.png')
 
         st.image(img2)
         show(rate_id_list, rate_list)
     elif(select == 'Directors with most Number Of movies'):
         st.header("The Director's List ")
         st.markdown("[Woody Allen]() is one of the Directors with most number of films.He is a writer and director who bares his emotions and neuroses on screen. It's for this very reason that so many of his films feel so personal. ")
-        img = Image.open('woody allen.jpg')
+        img = Image.open('./assets/images/woody allen.jpg')
         st.image(img)
-        img2 = Image.open('directors.jpg')
+        img2 = Image.open('./assets/images/directors.jpg')
 
         st.subheader("The Top 15 Directors :")
         director_list.reverse()
@@ -388,8 +388,8 @@ def main():
         st.header("Most Frequent Actors :")
         st.markdown(
             "And The award For Most commonly starring actor goes to [RobertDeNiro](https://en.wikipedia.org/wiki/Robert_De_Niro). If you see 'quality' as a measure of the artistic merits of a movie, then you may chime more with the views of film critics, whereas if you link quality to audience enjoyment then the IMDb audience scores may make more sense to you.")
-        img = Image.open("actor.jpg")
-        img2 = Image.open("actors.jpg")
+        img = Image.open("./assets/images/actor.jpg")
+        img2 = Image.open("./assets/images/actors.jpg")
         st.image(img)
 
         st.markdown("Other Top Frequent Actors: ")
@@ -408,19 +408,19 @@ def main():
             "Words Like **Man**,** The**,**Death**,**night** etc are commonly used in movie titles.")
 
         st.markdown("After compiling 10000 movies' titles from 1966 to 2016,i dropped them into a wordcloud to see what were the touchstone topics in the movie industry. Here's the result:")
-        img = Image.open('wordcloud.png')
+        img = Image.open('./assets/images/wordcloud.png')
         st.image(img)
         st.subheader("Count Pie chart")
-        img2 = Image.open("wordcount.jpg")
+        img2 = Image.open("./assets/images/wordcount.jpg")
         st.image(img2)
     elif(select == 'Movies With longest Runtime'):
         st.header('15 longest Movies : ')
         st.markdown(
             'Do u know there are films that goes upto 15 hours or even more.[The Story of Film: An Odyssey](https://en.wikipedia.org/wiki/The_Story_of_Film:_An_Odyssey) is one of those,a 2011 British documentary film about the history of film, presented on television in 15 one-hour chapters with a total length of over 900 minutes.')
 
-        img = Image.open('odessy.jpg')
+        img = Image.open('./assets/images/odessy.jpg')
         st.image(img)
-        img2 = Image.open('top_15_runtime.png')
+        img2 = Image.open('./assets/images/top_15_runtime.png')
         st.image(img2, width=700)
 
         st.subheader("Other Longest Movies are ")
